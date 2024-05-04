@@ -32,7 +32,8 @@ class Program
             }
             else if (userNumber == 2)
             {
-                theJournal.DisplayAll();
+                Console.WriteLine("This should display all your entries.");
+                // theJournal.DisplayAll();
             }
             else if (userNumber == 3)
             {
@@ -46,7 +47,7 @@ class Program
             }
             else if (userNumber == 5)
             {
-                Console.WriteLine("Thank you.  Goodbye.");
+                Console.WriteLine("Thank you! Goodbye!");
             }
             else 
             {
