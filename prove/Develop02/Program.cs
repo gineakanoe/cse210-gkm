@@ -8,6 +8,7 @@ class Program
         Entry anEntry = new Entry();
         anEntry.Display();
 
-        Console.WriteLine("Hello Develop02 World!");
+        Console.WriteLine("Hello Develop02 World!");   
+        
     }
 }
