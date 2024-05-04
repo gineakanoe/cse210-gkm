@@ -1,8 +1,9 @@
 using System.IO;
+using System.Collections.Generic;
 
 public class Journal
 {
-    public List<Entry> _entries;
+    public List<Entry> _entries = new List<Entry>();
 
     DateTime theCurrentTime = DateTime.Now;
     // string dateText = theCurrentTime.ToShortDateString();
@@ -16,15 +17,15 @@ public class Journal
         Console.Write("Entry: ");
         string userEntry = Console.ReadLine();
 
-        // Entry newEntry = new Entry();
-        // _entries.Add(newEntry);
+        // Entry newEntry = new Entry(theCurrentTime, chosenPrompt, userEntry);
+        // _entries.Add(userEntry);
     }
 
     public void DisplayAll()
     {
         foreach (Entry entry in _entries)
         {
-            // Console.WriteLine(entry.Display());
+            // Console.WriteLine(Entry.Display());
         }
     }
 
