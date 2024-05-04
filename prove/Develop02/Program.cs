@@ -11,9 +11,10 @@ class Program
 
         int userNumber = -1;
 
+        Console.WriteLine("Welcome to the Journal Program!");
+
         while (userNumber != 5)
         {
-            Console.WriteLine("Welcome to the Journal Program!");
             Console.WriteLine("Please select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
@@ -27,21 +28,21 @@ class Program
 
             if (userNumber == 1)
             {
-                Console.WriteLine("This is your prompt.");
-                Console.Write("Entry: ");
-                Console.ReadLine();
+                theJournal.AddEntry(anEntry);
             }
             else if (userNumber == 2)
             {
-                Console.WriteLine("Your entries displayed here.");
+                theJournal.DisplayAll();
             }
             else if (userNumber == 3)
             {
-                Console.WriteLine("Loading....");
+                Console.WriteLine("Loading...");
+                // theJournal.LoadFromFile();
             }
             else if (userNumber == 4)
             {
-                Console.WriteLine("Save your file here.");
+                Console.WriteLine("Saving...");
+                // theJournal.SaveToFile();
             }
             else if (userNumber == 5)
             {
