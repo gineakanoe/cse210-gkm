@@ -53,10 +53,7 @@ class Program
             {
                 Console.WriteLine("That is not a valid entry, please try again.");
             }
-        }
-
-           
-        
+        }      
         
     }
 }
